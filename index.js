@@ -1,1 +1,37 @@
 // Write your solution here!
+let drivers = ["Milo", "Otis", "Garfield"]
+
+//drivers.push("bill")
+
+function destructivelyAppendDriver(name) {
+    drivers.push("Ralph")
+}
+
+
+function destructivelyPrependDriver(name) {
+    drivers.unshift("Bob")
+}
+
+function destructivelyRemoveLastDriver() {
+    drivers.pop()
+}
+
+function destructivelyRemoveFirstDriver() {
+    drivers.shift()
+}
+
+function appendDriver(name) {
+    return[...drivers, name]
+}
+
+function prependDriver(bill) {
+    return[bill, ...drivers]
+}
+
+function removeFirstDriver() {
+    return drivers.slice(1)
+}
+
+function removeLastDriver() {
+    return drivers.slice(0, drivers.length -1)
+}
